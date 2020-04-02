@@ -886,7 +886,7 @@ static int dtmf_stream(struct ast_channel *chan, const char *digits, int between
 				break;
 			}
 		} else {
-			ast_log(LOG_WARNING, "Illegal DTMF character '%c' in string. (0-9*#aAbBcCdD allowed)\n", *ptr);
+			ast_log(LOG_WARNING, "Illegal DTMF character '%c' in string. (0123456789*#abcdfABCDF allowed)\n", *ptr);
 		}
 	}
 
